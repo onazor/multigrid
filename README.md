@@ -28,7 +28,7 @@ This project investigates multigrid methods as accelerating basic iterative solv
 - **Linear elliptic OCP** (multigrid_LOCP.m)
 - **Bilinear elliptic OCP** (multigrid_BLOCP.m)
 - **State-constrained bilinear OCP**, solved using:
-  - **Lavrentiev-type regularization** (multigrid_LR.m)
+  - **Lavrentiev-type regularization** (csmg_multigrid_LR.m)
 
 ---
 
