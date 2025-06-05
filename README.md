@@ -22,7 +22,6 @@ This project investigates multigrid methods as accelerating basic iterative solv
 ### 1. Partial Differential Equations (PDEs)
 - **Elliptic PDEs**
   - Finite difference discretization
-  - Classical solvers vs. V-cycle/W-cycle/F-cycle multigrid
 
 - **Parabolic PDEs**
   - Implicit time-stepping (e.g., Backward Euler)
