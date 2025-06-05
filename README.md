@@ -16,19 +16,19 @@ This project investigates multigrid methods as accelerating basic iterative solv
 ## Numerical Methods Implemented
 
 ### 1. Partial Differential Equations (PDEs)
-- **Elliptic PDEs**
+- **Elliptic PDEs** (Multigrid.m)
   - Finite difference discretization
 
-- **Parabolic PDEs**
+- **Parabolic PDEs** (Multigrid.m)
   - Implicit time-stepping (e.g., Backward Euler)
   - Space discretization via finite difference
   - Multigrid applied at each time step
 
 ### 2. Optimal Control Problems (OCPs)
-- **Linear elliptic OCP** 
-- **Bilinear elliptic OCP**
+- **Linear elliptic OCP** (multigrid_LOCP.m)
+- **Bilinear elliptic OCP** (multigrid_BLOCP.m)
 - **State-constrained bilinear OCP**, solved using:
-  - **Lavrentiev-type regularization**
+  - **Lavrentiev-type regularization** (multigrid_LR.m)
 
 ---
 
