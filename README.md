@@ -6,7 +6,7 @@ This repository contains all the MATLAB codes developed and used in my undergrad
 
 **"Numerical analysis for solving partial differential equations and optimal control problems"**
 
-## 📘 Overview
+## Overview
 
 This project investigates multigrid methods as accelerating basic iterative solvers for large-scale linear systems that arise in:
 - **Elliptic and parabolic PDEs**
@@ -17,7 +17,7 @@ This project investigates multigrid methods as accelerating basic iterative solv
 
 ---
 
-## 🧮 Numerical Methods Implemented
+## Numerical Methods Implemented
 
 ### 1. Partial Differential Equations (PDEs)
 - **Elliptic PDEs**
@@ -37,7 +37,7 @@ This project investigates multigrid methods as accelerating basic iterative solv
 
 ---
 
-## 🚀 Multigrid Techniques
+## Multigrid Techniques
 
 - **Cycles:** V-cycle, W-cycle, F-cycle
 - **Smoothers:** Gauss-Seidel, residual-based Newton method smoothers (for bilinear systems)
