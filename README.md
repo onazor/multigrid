@@ -1,10 +1,6 @@
-# multigrid
+# [Codes] Numerical analysis for solving partial differential equations and optimal control problems
 
-# Multigrid Methods for PDEs and Optimal Control Problems (Undergraduate Thesis)
-
-This repository contains all the MATLAB codes developed and used in my undergraduate thesis titled
-
-**"Numerical analysis for solving partial differential equations and optimal control problems"**
+This repository contains all the MATLAB codes developed and used in my undergraduate thesis.
 
 ## Overview
 
