@@ -173,3 +173,34 @@ function Δy = Laplace(y)
     A = (kron(speye(N),T) + kron(T,speye(N))) * (N+1)^2;
     Δy = reshape(A*yv, N, N);
 end
+
+function finegrid = interpolation(coarsegrid)
+    [n,~] = size(coarsegrid);
+    k = 2*n + 1;
+    
+    % initialize fine-grid matrix
+    finegrid = zeros(k, k);
+    
+    % compute indices
+    a1 = 1:2:k-2; % fine-grid points between coarse-grid points
+    a2 = 2:2:k-1; % coarse-grid locations mapped onto fine grid
+    a3 = 3:2:k;   % fine-grid points between coarse-grid points
+    
+    % assign coarse-grid values directly
+    finegrid(a2, a2) = coarsegrid;
+    
+    % precompute weighted values for efficiency
+    half_coarsegrid = 0.5 * coarsegrid;
+    quarter_coarsegrid = 0.25 * coarsegrid;
+    
+    % assign interpolated values using vectorized operations
+    finegrid(a1, a2) = half_coarsegrid;
+    finegrid(a2, a1) = half_coarsegrid;
+    finegrid(a2, a3) = finegrid(a2, a3) + half_coarsegrid; 
+    finegrid(a3, a2) = finegrid(a3, a2) + half_coarsegrid; 
+    
+    finegrid(a1, a1) = quarter_coarsegrid;
+    finegrid(a3, a1) = finegrid(a3, a1) + quarter_coarsegrid; 
+    finegrid(a1, a3) = finegrid(a1, a3) + quarter_coarsegrid; 
+    finegrid(a3, a3) = finegrid(a3, a3) + quarter_coarsegrid; 
+end
